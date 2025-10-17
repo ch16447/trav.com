@@ -1,0 +1,38 @@
+.contact__form{
+    margin: auto;
+    margin-top: 3rem;
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+}
+
+.contact__form input{
+    width: 300px;
+    outline: none;
+    color: grey;
+    max-width: 300px;
+    padding-left: 2rem;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+
+.contact__form button{
+    border-radius: 7px;
+    padding-inline: 1rem;
+    font-size: 1.2rem;
+}
+
+@media (width < 605) {
+    .contact__form{
+        flex-direction: column;
+    }
+
+    .contact__form input{
+        padding-block: 1rem;
+    }
+
+    .contact__form button{
+        padding-block: 1rem;
+    }
+}

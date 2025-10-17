@@ -1,42 +1,121 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*, *::before, *::after{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root{
+    --primary-text: #f3efef;
+    --primary-light: rgb(232, 238, 242);
+    --header:rgb(28, 109, 138);
+    --logo-color: #ebe5e5;
+    --logo-icon: #d8d6d6;
+    --white: #FFFFFF;
+    --dark: #36383b;
+    --grey:rgb(104, 134, 149);
+    --grey-light:rgb(174, 174, 174);
+    --ylow: rgb(255, 238, 0);
+    --max-width: 1255px;
+    --body--color:rgb(249, 247, 247);
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+:root{
+    --btn-color: rgb(37, 153, 230);
+    --icon-color: rgb(59, 105, 143);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --bg-1: rgb(39, 60, 73);
+    --bg-2: rgb(33, 54, 68);
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+:root{
+    --sh:3rem;
+    --sd:1.3rem;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+body, html{
+    overflow-x: hidden;
+    background-color: var(--body--color);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+
+.section__container{
+    width: 100%;
+    margin: auto;
+    padding-inline: calc(2rem + 6vw);
+    padding-block: calc(4rem + 1vw);
+}
+
+.section__header{
+    font-size: var(--sh);
+    color: var(--dark);
+    text-align: center;
+}
+
+.section__description{
+    font-size: var(--sd);
+    color: var(--dark);
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+button{
+    background-color: var(--btn-color);
+    padding: .7rem 2.4rem;
+    border-radius: 27px;
+    border: none;
+    color: var(--primary-text);
+    font-size: 1.23rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+button:hover{
+    filter: brightness(75%);
+}
+
+button:active{
+    scale: 0.98;
+}
+
+.icon{
+    color: var(--icon-color);
+}
+
+.logo__a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--logo-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.logo__icon{
+    color: var(--logo-icon);
+    font-size: 1.9rem;
+}
+
+.logo__name{
+    font-size: 1.8rem;
 }
